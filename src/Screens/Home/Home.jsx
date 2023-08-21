@@ -5,6 +5,8 @@ import Menu from '../../Components/Menu/Menu'
 import SubFooter from '../../Components/SubFooter/SubFooter'
 import Footer from '../../Components/Footer/Footer'
 import Humburguer from '../../Components/Humburguer/Humburguer'
+import { Link } from 'react-router-dom'
+import Slide from '../../Components/Slide/Slide'
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
       <Header />
       <Humburguer />
       <Menu select={"inicio"} />
-      <div className="imagemContent">
+      {/* <div className="imagemContent">
         <div className="backImgContent">
           <div className="colorBack">
             <div className="textBack">
@@ -22,7 +24,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Slide />
       <div className="fulltextIntrudation">
         <div className="textContentIntrodaction">
           <h1 className="intudaction">
@@ -36,7 +39,7 @@ export default function Home() {
         <div className="textContentIntrodactionFull">
           <div className="cardObjectivos">
             <div className="imagemCardObj">
-              <img src="./cidade.jpg" alt="" className="imgCardObj" />
+              <img src="./cgad.jpeg" alt="" className="imgCardObj" />
             </div>
             <div className="textCArdObj">
               <div className="titleCardObj">VISÃO</div>
@@ -45,7 +48,7 @@ export default function Home() {
           </div>
           <div className="cardObjectivos">
             <div className="imagemCardObj">
-              <img src="./rio.jpg" alt="" className="imgCardObj" />
+              <img src="./cgad.jpeg" alt="" className="imgCardObj" />
             </div>
             <div className="textCArdObj">
               <div className="titleCardObj">MISSÃO</div>
@@ -54,7 +57,7 @@ export default function Home() {
           </div>
           <div className="cardObjectivos">
             <div className="imagemCardObj">
-              <img src="./muro.jpg" alt="" className="imgCardObj" />
+              <img src="./cgad.jpeg" alt="" className="imgCardObj" />
             </div>
             <div className="textCArdObj">
               <div className="titleCardObj">VALORES E PRINCÍPIOS</div>
@@ -72,7 +75,7 @@ export default function Home() {
                   Com atuação em todo o páis, agora se expandindo
                   em toda diáspora Guineense
                 </div>
-                <button className="leftButtonBissau">Conheça a gente <i className="fa-solid fa-circle-check cicleColor"></i></button>
+                <Link to='/sobre'><button className="leftButtonBissau">Conheça a gente <i className="fa-solid fa-circle-check cicleColor"></i></button></Link>
               </div>
               <div className="centerBissau"></div>
               <div className="rightBissau">
@@ -98,10 +101,9 @@ export default function Home() {
               consumo de droga de cidadãos guineenses na Guine-Bissaue 
               e nas Diásporas Guineense no mundo Todo.
             </p>
-            <button className="buttonHistory">
-              Sobre OGAD 
-              <i className="fa-solid fa-circle-chevron-right cicleColor"></i>
-            </button>
+            <Link to='/sobre'>
+              <button className="buttonHistory">Sobre OGAD <i className="fa-solid fa-circle-chevron-right cicleColor"></i></button>
+            </Link>
           </div>
         </div>
       </div>
