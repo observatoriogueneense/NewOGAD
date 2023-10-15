@@ -1,5 +1,17 @@
 /* SlideShow.css */
+.textBannerCenter{
+  position: absolute;
+  top: 30%;
+  right: 130px;
+  max-width: 45%;
+  padding: 3px 1px 3px 3px;
+  background-color: #3333334b;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1px 2px;
+  text-align:start;
 
+}
 .contDivPencepaly{
   position: relative;
 }
@@ -135,5 +147,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 750px){
+    .textBannerCenter{
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 650px){
+    .textBannerCenter{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 500px){
+    .textBannerCenter{
+      display: none;
+    }
   }
   
